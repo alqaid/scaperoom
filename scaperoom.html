@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCAPE ROOM</title>
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scaperoom/style.css">
+    <link rel="stylesheet" href="scaperoom/modal.css">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="shortcut icon" href="#">
+    <!-- Android META color pantalla-->
+    <meta name="theme_color" content="#ac7345">
+</head>
+
+<body>
+    <div class="tooltipBar">
+        <p id="encabezado">La Maleta Explosiva</p>
+    </div>
+    <div class="contenedor">
+
+
+        <h1>SCAPE ROOM</h1>
+        <p>By Angel Alcaide (v1.0)</p>
+
+
+        <div class="escenas">
+            <a href="#" id="btnLondres">
+                <i id="londres-1" class="fa fa-suitcase">
+                    <span id="londres-2" class="escena-item">
+                        Maleta Londres</span></i></a>
+            <a href="#" id="btnatenas">
+                <i id="atenas-1" class="fa fa-suitcase">
+                    <span id="atenas-2" class="escena-item">
+                        Maleta Atenas</span></i></a>
+            <a href="#" id="btnparis">
+                <i id="paris-1" class="fa fa-suitcase">
+                    <span id="paris-2" class="escena-item">
+                        Maleta París</span></i></a>
+            <a href="#" id="btnberlin">
+                <i id="berlin-1" class="fa fa-suitcase">
+                    <span id="berlin-2" class="escena-item">
+                        Maleta Berlín</span></i></a>
+            <a href="#" id="btnroma">
+                <i id="roma-1" class="fa fa-suitcase">
+                    <span id="roma-2" class="escena-item">
+                        Maleta Roma</span></i></a>
+            <a href="#" id="btnviena">
+                <i id="viena-1" class="fa fa-suitcase">
+                    <span id="viena-2" class="escena-item">
+                        Maleta Viena</span></i></a>
+
+        </div>
+
+
+    </div>
+    <!--
+        ************************************************************************
+                                    MENÚ INFERIOR
+        ************************************************************************
+    -->
+    <!-- https://fontawesome.com/icons?d=gallery -->
+    <div class="icon-bar">
+        <a href="#"><i class=" "></i></a>
+        <a class="active" href="/scaperoom/about.html"><i class="fa fa-cog"></i></a>
+        <a href="#"><i class=" "></i></a>
+        <a href="#" id="abrirModayuda"><i class="fa fa-question"></i></a>
+        <!-- <i class="fa fa-search"></i> 
+            fa-envelope  fa-globe  fa-trash  fa-question fa-hause fa-cog
+           --> -->
+    </div>
+
+
+    <!-- ************************************************************************
+                                    modales
+        ************************************************************************
+    -->
+    <div id="ModalAyuda" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="closeAyuda" class="close">&times;</span>
+            <p id="parrafoAyuda" class="modal-texto">Selecciona la última maleta activa e introduce el código de
+                desbloqueo</p>
+        </div>
+    </div>
+    <div id="ModalLondres" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="closeLondres" class="close">&times;</span>
+            <p class="modal-texto">
+                <p class="modal-texto">Código para abrir maleta de Lóndres</p>
+                <input type="text" id="txtlondres" class="txtnumber" maxlength="4" data-inputmask="'mask': '9999'" />
+                <button id="buttonLondres" class="button"><i class="fa fa-lock"></i></button>
+            </p>
+        </div>
+    </div>
+    <div id="modalatenas" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="closeatenas" class="close">&times;</span>
+            <p class="modal-texto">
+            <p class="modal-texto">Código para abrir maleta de Atenas</p>
+            <input type="text" id="txtatenas" class="txtnumber" maxlength="4" data-inputmask="'mask': '9999'" />
+
+            <button id="buttonatenas" class="button"><i class="fa fa-lock"></i></button>
+            </p>
+        </div>
+    </div>
+    <div id="modalparis" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="closeparis" class="close">&times;</span>
+            <p class="modal-texto">
+            <p class="modal-texto">Código para abrir maleta de París</p>
+            <input type="text" id="txtparis" class="txtnumber" maxlength="4" data-inputmask="'mask': '9999'" />
+
+            <button id="buttonparis" class="button"><i class="fa fa-lock"></i></button>
+            </p>
+        </div>
+    </div>
+    <div id="modalberlin" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="closeberlin" class="close">&times;</span>
+            <p class="modal-texto">
+            <p class="modal-texto">Código para abrir maleta de Berlín</p>
+            <input type="text" id="txtberlin" class="txtnumber" maxlength="4" data-inputmask="'mask': '9999'" />
+
+            <button id="buttonberlin" class="button"><i class="fa fa-lock"></i></button>
+            </p>
+        </div>
+    </div>
+    <div id="modalroma" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="closeroma" class="close">&times;</span>
+            <p class="modal-texto">
+            <p class="modal-texto">Código para abrir maleta de Roma</p>
+            <input type="text" id="txtroma" class="txtnumber" maxlength="4" data-inputmask="'mask': '9999'" />
+
+            <button id="buttonroma" class="button"><i class="fa fa-lock"></i></button>
+            </p>
+        </div>
+    </div>
+    <div id="modalviena" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="closeviena" class="close">&times;</span>
+            <p class="modal-texto">
+            <p class="modal-texto">Código para abrir maleta de Viena</p>
+            <input type="text" id="txtviena" class="txtnumber" maxlength="4" data-inputmask="'mask': '9999'" />
+
+            <button id="buttonviena" class="button"><i class="fa fa-lock"></i></button>
+            </p>
+        </div>
+    </div>
+    <!-- 
+        ************************************************************************
+        ************************************************************************
+    -->
+    <script>
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register('/sc1.js')
+        } 
+    </script>
+    <script src="scaperoom/app.js"></script>
+
+
+</body>
+
+</html>

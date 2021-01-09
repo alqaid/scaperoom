@@ -1,0 +1,114 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url('/scaperoom/fonts/Yellowtail-Regular.ttf');
+}
+p, h1,h2,h3,h4  {
+  font-family: myFirstFont;
+  color:azure;
+}
+.fa,.enlaceblanco {
+  
+  color:azure;
+}
+body{
+  margin:0;
+  background-image: url('/scaperoom/img/fondo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+   
+}
+.contenedor{
+  padding: 10px 0 0 10px;
+}
+
+.tooltipBar {
+  width: 100%;
+  background-color: rgba(13, 13, 13, 0.8);
+  overflow: auto;
+  box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tooltipBar p {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 6px 0px 0px 0px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: rgba(138, 94, 13, 0.411);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+}
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+
+.escenas {
+  width: 100%;
+  background-color: rgba(138, 94, 13, 0.411);
+  overflow: hidden;
+  
+}
+.escenas a {   
+  width: 100%;
+  text-align: left;
+  padding: 10px  ;
+  margin: 0 30px 0 30px;
+  transition: all 0.3s ease;
+  color: rgb(49, 41, 41);
+  font-size: 36px;
+  font-family: myFirstFont;
+}
+.escena-item {   
+  width: 100%;
+  text-align: left;
+  padding: 0px  ;
+  margin: 0 0px 0 0px;
+  transition: all 0.3s ease;
+  color: rgb(49, 41, 41);
+  font-size: 36px;
+  font-family: myFirstFont;
+}
+
+
+.button {
+  background-color: #ac7345;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.txtnumber {
+  background: rgb(255, 255, 255);
+  border: 1px solid #393939;
+  border-radius: 5px 5px 5px 5px;
+  color: #393939;
+  font-size: 25px;
+  width: 60%;
+  padding: 10px;
+
+
+}
+
+#londres-1, #londres-2 {
+  color: white;
+}

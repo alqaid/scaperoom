@@ -1,0 +1,22 @@
+{
+  "short_name": "ScapeRoom",
+  "name": "ScapeRoom-1 game in your hause",
+  "description": "Desarrollada por Angel Alcaide, https://alcaide.info",
+  "start_url": "scaperoom.html",
+  "background_color": "#ac7345",
+  "theme_color": "#ac7345",
+  "display": "fullscreen",
+  "orientation":"portrait",
+  "icons": [
+    {
+      "src": "/scaperoom/img/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/scaperoom/img/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
